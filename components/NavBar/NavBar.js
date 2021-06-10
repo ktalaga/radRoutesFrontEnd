@@ -1,45 +1,33 @@
-import React from 'react';
-import {StyleSheet, View, Text, FlatList} from 'react-native';
-import {Link} from 'react-router-dom';
-import {ProfileTabNavigator} from 'react-native'
+import * as React from 'react';
+import { Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-
-
-const NavBar = () => {
-  
-
-    return (
-        <ProfileTabNavigator tabBarOptions={{
-            labelStyle: {
-                textTransform: "uppercase",
-            },
-            indicatorStyle: {
-                height: null,
-                top: '10%',
-                bottom: '10%',
-                width: '45%',
-                left: '2.5%',
-                borderRadius: 100,
-            },
-            style: {
-                alignSelf: "center",
-                width: '50%',
-                borderRadius: 100,
-                borderColor: "blue",
-                backgroundColor: "white",
-                elevation: 5, // shadow on Android
-                shadowOpacity: .10, // shadow on iOS,
-                shadowRadius: 4, // shadow blur on iOS
-            },
-            tabStyle: {
-                borderRadius: 100,
-            },
-        }}
-        swipeEnabled={true}>
-     <ProfileTabNavigator.Screen name="Info" component={ProfileInfoScreen} />
-     <ProfileTabNavigator.Screen name="Photos" component={ProfilePhotosScreen} />
-   </ProfileTabNavigator>
-  );
+function HomeScreen() {
+return (
+<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <Text>Home!</Text>
+</View>
+);
 }
 
-export default NavBar;
+function SettingsScreen() {
+return (
+<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <Text>Settings!</Text>
+</View>
+);
+}
+
+const Tab = createBottomTabNavigator();
+
+export default function App() {
+return (
+<NavigationContainer>
+    <Tab.Navigator>
+    <Tab.Screen name="Home" component={HomeScreen} />
+    <Tab.Screen name="Settings" component={SettingsScreen} />
+    </Tab.Navigator>
+</NavigationContainer>
+);
+}
