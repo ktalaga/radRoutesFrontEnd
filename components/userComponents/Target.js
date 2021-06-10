@@ -5,7 +5,7 @@ const Target = () => {
     
     return (
         <View>
-
+            <Text>ajbdsjkdasjladnlaksd</Text>
         </View>
     );
 

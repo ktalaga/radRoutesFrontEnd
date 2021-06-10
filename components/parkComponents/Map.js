@@ -7,7 +7,7 @@ const Map = () => {
 
     return(
         <View>
-
+            <Text>dhabsdasnldkas</Text>
         </View>
     )
 }
