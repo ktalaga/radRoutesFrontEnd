@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import ParkContainer from './ParkContainer';
 import UserContainer from './UserContainer';
 import NavBar from '../components/NavBar/NavBar'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {StaticRouter as Router, Route, Switch} from 'react-router-dom';
 
 const MainContainer = () => {
     
