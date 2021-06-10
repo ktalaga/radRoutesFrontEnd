@@ -11,7 +11,7 @@ const MainContainer = () => {
         <View>
             <Router>
                 <NavBar/>
-                <Text>I am the MainContainer</Text>
+
                 <ParkContainer/>
                 <UserContainer/>
             </Router>

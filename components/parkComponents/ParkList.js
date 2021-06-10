@@ -5,7 +5,7 @@ const ParkList = () => {
     
     return (
         <View>
-            <Text>I am a ParkList Component</Text>
+
         </View>
     )
 

@@ -7,9 +7,7 @@ const Map = () => {
 
     return(
         <View>
-            <Text>
-                I am the map Component
-            </Text>
+
         </View>
     )
 }

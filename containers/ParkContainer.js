@@ -10,7 +10,7 @@ const ParkContainer = () => {
     
     return (
         <View>
-            <Text>I am a ParkContainer</Text>
+
             <ParkList/>
             <Park/>
             <Routes/>
