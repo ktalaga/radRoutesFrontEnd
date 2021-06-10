@@ -10,7 +10,6 @@ const ParkContainer = () => {
     
     return (
         <View>
-
             <ParkList/>
             <Park/>
             <Routes/>
