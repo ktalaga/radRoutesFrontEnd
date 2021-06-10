@@ -13,8 +13,7 @@ const UserContainer = () => {
             <DistanceCovered/>
             <RouteList/>
             <Target/>
-            <User/>
-        </View>
+            </View>
     );
 
 }
