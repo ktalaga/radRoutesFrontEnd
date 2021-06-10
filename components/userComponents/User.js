@@ -7,9 +7,7 @@ const User = () => {
 
     return(
         <View>
-            <Text>
-                I am the User Component
-            </Text>
+
         </View>
     )
 }

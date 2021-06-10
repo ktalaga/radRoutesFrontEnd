@@ -9,7 +9,7 @@ const UserContainer = () => {
     
     return (
         <View>
-            <Text>I am an UserContainer</Text>
+
             <DistanceCovered/>
             <RouteList/>
             <Target/>

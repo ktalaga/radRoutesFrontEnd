@@ -5,7 +5,7 @@ const DistanceCovered = () => {
   
     return (
         <View>
-            <Text>I am a DistanceCovered User Component</Text>
+
         </View>
     )
 
