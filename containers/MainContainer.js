@@ -9,10 +9,9 @@ const MainContainer = () => {
     
     return (
         <View>
-            <Router>
-                <Text>I am the MainContainer</Text>
-                <ParkContainer/>
+            <Router>               
                 <UserContainer/>
+                <ParkContainer/>       
                 <NavBar/>
             </Router>
         </View>

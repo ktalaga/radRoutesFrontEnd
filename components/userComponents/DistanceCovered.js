@@ -5,7 +5,6 @@ const DistanceCovered = () => {
   
     return (
         <View>
-            <Text>dasudnljasndnasldnlaskdnasndlasndlandasla</Text>
         </View>
     )
 
