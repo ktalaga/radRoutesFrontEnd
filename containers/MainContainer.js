@@ -21,7 +21,7 @@ const windowHeight = useWindowDimensions().height;
     return (
 
 
-        null
+        <NavBar/>
  
     );
     }
