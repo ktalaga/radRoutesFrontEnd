@@ -8,13 +8,11 @@ import {StaticRouter as Router, Route, Switch} from 'react-router-dom';
 const MainContainer = () => {
     
     return (
-        <View>
-            <Router>               
-                <UserContainer/>
-                <ParkContainer/>       
+
+                
                 <NavBar/>
-            </Router>
-        </View>
+
+
         
     );
 }
