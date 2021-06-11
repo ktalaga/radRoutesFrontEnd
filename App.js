@@ -3,10 +3,14 @@ import {StatusBar} from 'expo-status-bar';
 import {StyleSheet, View, Text, Dimensions} from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 import Map from './components/parkComponents/Map'
 import UserContainer from './containers/UserContainer';
 import ParkContainer from './containers/ParkContainer';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+
+
 
 function MyProfile() {
 return (
@@ -40,19 +44,46 @@ function Settings() {
     );
     }
 
-const Tab = createBottomTabNavigator();
+const Tab = createMaterialBottomTabNavigator();
 
 export default function App() {
-return (
-<NavigationContainer>
-    <Tab.Navigator>
-    <Tab.Screen name="My Profile" component={MyProfile} />
-    <Tab.Screen name="Parks" component={Parks} />
-    <Tab.Screen name="My Routes" component={MyRoutes} />
-    <Tab.Screen name="Settings" component={Settings} />
-    </Tab.Navigator>
-</NavigationContainer>
-);
+  return (
+    <NavigationContainer>
+      <Tab.Navigator
+        shifting={false}
+        activeColor="#EFDECD"
+        inactiveColor="#F0F8FF"
+        barStyle={{ backgroundColor: "#228B22"	 }}
+      >
+    <Tab.Screen name="My Profile" component={MyProfile} options={{
+          tabBarLabel: 'My Profile',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="head-check" color={color} size={26} />
+          ),
+        }}/>
+    <Tab.Screen name="Parks" component={Parks} options={{
+          tabBarLabel: 'Parks',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="pine-tree" color={color} size={26} />
+          ),
+        }}
+    />
+    <Tab.Screen name="My Routes" component={MyRoutes} options={{
+          tabBarLabel: 'My Routes',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="shoe-print" color={color} size={26} />
+          ),
+        }}
+    />
+    <Tab.Screen name="Settings" component={Settings} options={{
+          tabBarLabel: 'Target',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="target" color={color} size={26} />
+          ),
+        }}/>
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
 }
 
 const styles = StyleSheet.create({
