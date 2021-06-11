@@ -10,7 +10,10 @@ const ParkContainer = () => {
     
     return (
 
-            <Map/>
+
+                    <Map/>
+
+            
 
 
     );

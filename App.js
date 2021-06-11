@@ -36,11 +36,9 @@ function MyRoutes() {
     );
     }
 
-function Settings() {
+function LogOut() {
     return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>This is Settings</Text>
-    </View>
+      null
     );
     }
 
@@ -75,10 +73,10 @@ export default function App() {
           ),
         }}
     />
-    <Tab.Screen name="Settings" component={Settings} options={{
-          tabBarLabel: 'Target',
+    <Tab.Screen name="Log Out" component={LogOut} options={{
+          tabBarLabel: 'Log Out',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="target" color={color} size={26} />
+            <MaterialCommunityIcons name="logout" color={color} size={26} />
           ),
         }}/>
       </Tab.Navigator>
