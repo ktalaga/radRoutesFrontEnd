@@ -18,7 +18,5 @@ const MainContainer = () => {
         </View>
         
     );
-
 }
-
 export default MainContainer;

@@ -9,7 +9,7 @@ import { Dimensions } from 'react-native';
 function MyProfile() {
 return (
 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>This is my My Profile screen!!</Text>
+    <Text>This is my Profile</Text>
 </View>
 );
 }
@@ -17,7 +17,7 @@ return (
 function Parks() {
 return (
 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>This is my Parks screen!!</Text>
+    <Text>This is Parks!</Text>
 </View>
 );
 }
@@ -25,7 +25,7 @@ return (
 function MyRoutes() {
     return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>This is my Routes screen!</Text>
+        <Text>This is My Routes</Text>
     </View>
     );
     }

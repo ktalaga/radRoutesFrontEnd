@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import MapView from 'react-native-maps';
 
 const Map = () => {
-    
+
     return(
         <View style={styles.container}>
         <MapView
