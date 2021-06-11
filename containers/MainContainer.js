@@ -20,8 +20,14 @@ const windowHeight = useWindowDimensions().height;
     const window = useWindowDimensions();
     return (
 
+        <Router>
 
-        <NavBar/>
+            <Text>I am a Main Container</Text>
+            <NavBar/>
+            <Text>I am a Main Container</Text>
+            <Text>I am a Main Container</Text>
+        </Router>
+        
  
     );
     }
