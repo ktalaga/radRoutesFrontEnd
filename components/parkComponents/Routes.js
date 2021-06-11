@@ -5,7 +5,7 @@ const Routes = () => {
     
     return (
         <View>
-
+                        <Text>This is Routes component</Text>
         </View>
     );
 

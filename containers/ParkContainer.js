@@ -9,12 +9,13 @@ import Map from '../components/parkComponents/Map';
 const ParkContainer = () => {
     
     return (
-        <View>
-            <ParkList/>
-            <Park/>
-            <Routes/>
-            <Map/>
-        </View>
+
+
+                    <Map/>
+
+            
+
+
     );
 
 }
