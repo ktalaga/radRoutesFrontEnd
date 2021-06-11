@@ -7,6 +7,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Map from '../parkComponents/Map'
 import Map2 from '../parkComponents/Map2'
 import UserContainer from '../../containers/UserContainer';
+import ParkContainer from '../../containers/ParkContainer';
 
 function MyProfile() {
 return (
@@ -19,7 +20,7 @@ return (
 function Parks() {
 return (
 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Map2/>
+    <ParkContainer/>
 </View>
 );
 }

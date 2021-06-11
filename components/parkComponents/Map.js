@@ -6,7 +6,7 @@ import MapView from 'react-native-maps';
 const Map = () => {
 
     return(
-        <View style={styles.container}>
+
         <MapView
         style={styles.map}
     initialRegion={{
@@ -16,7 +16,7 @@ const Map = () => {
       longitudeDelta: 0.0421,
     }}
   />
-    </View>
+
   );
 }
 const styles = StyleSheet.create({
