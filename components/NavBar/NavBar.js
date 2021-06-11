@@ -1,10 +1,9 @@
 import * as React from 'react';
 import {StatusBar} from 'expo-status-bar';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, Dimensions} from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Dimensions } from 'react-native';
 import Map from '../parkComponents/Map'
 
 function MyProfile() {
@@ -31,6 +30,14 @@ function MyRoutes() {
     );
     }
 
+function Settings() {
+    return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text>This is Settings</Text>
+    </View>
+    );
+    }
+
 const Tab = createBottomTabNavigator();
 
 export default function App() {
@@ -40,6 +47,7 @@ return (
     <Tab.Screen name="My Profile" component={MyProfile} />
     <Tab.Screen name="Parks" component={Parks} />
     <Tab.Screen name="My Routes" component={MyRoutes} />
+    <Tab.Screen name="Settings" component={Settings} />
     </Tab.Navigator>
 </NavigationContainer>
 );

@@ -1,19 +1,32 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import ParkContainer from './ParkContainer';
 import UserContainer from './UserContainer';
 import NavBar from '../components/NavBar/NavBar'
 import {StaticRouter as Router, Route, Switch} from 'react-router-dom';
 
+
+
+
+
+
+
 const MainContainer = () => {
-    
+
+const windowWidth = useWindowDimensions().width;
+const windowHeight = useWindowDimensions().height;
+
+    const window = useWindowDimensions();
     return (
-
-                
-                <NavBar/>
-
-
-        
+        <NavBar/>
     );
-}
-export default MainContainer;
+    }
+    const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
+    }
+    });
+    
+    export default MainContainer;
