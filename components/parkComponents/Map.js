@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView from 'react-native-maps';
 
 const Map = () => {
 
@@ -33,4 +33,5 @@ const styles = StyleSheet.create({
 });
 
 export default Map;
+
     
