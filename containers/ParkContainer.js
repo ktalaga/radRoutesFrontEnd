@@ -9,7 +9,10 @@ import Map from '../components/parkComponents/Map';
 const ParkContainer = () => {
     
     return (
-        <Map/>
+
+            <Map/>
+
+
     );
 
 }
