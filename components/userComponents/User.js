@@ -7,7 +7,7 @@ const User = () => {
 
     return(
         <View>
-
+                        <Text>This is User Profile component</Text>
         </View>
     )
 }

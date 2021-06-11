@@ -11,6 +11,7 @@ import {StaticRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 
+
 const MainContainer = () => {
 
 const windowWidth = useWindowDimensions().width;
@@ -18,7 +19,10 @@ const windowHeight = useWindowDimensions().height;
 
     const window = useWindowDimensions();
     return (
-        <NavBar/>
+
+
+        null
+ 
     );
     }
     const styles = StyleSheet.create({

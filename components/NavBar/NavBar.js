@@ -5,11 +5,13 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Map from '../parkComponents/Map'
+import Map2 from '../parkComponents/Map2'
+import UserContainer from '../../containers/UserContainer';
 
 function MyProfile() {
 return (
 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>This is my Profile</Text>
+    <UserContainer/>
 </View>
 );
 }
@@ -17,7 +19,7 @@ return (
 function Parks() {
 return (
 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Map/>
+    <Map2/>
 </View>
 );
 }

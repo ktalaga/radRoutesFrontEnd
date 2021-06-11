@@ -5,6 +5,7 @@ const Target = () => {
     
     return (
         <View>
+            <Text>I am a Target Component, in the User Container</Text>
         </View>
     );
 
